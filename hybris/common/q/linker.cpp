@@ -4001,7 +4001,7 @@ bool soinfo::link_image(const soinfo_list_t& global_group, const soinfo_list_t& 
       DL_ERR_AND_LOG("\"%s\" has text relocations (https://android.googlesource.com/platform/"
                      "bionic/+/master/android-changes-for-ndk-developers.md#Text-Relocations-"
                      "Enforced-for-API-level-23)", get_realpath());
-      return false;
+      //edp17 return false;
     }
     // Make segments writable to allow text relocations to work properly. We will later call
     // phdr_table_protect_segments() after all of them are applied.
